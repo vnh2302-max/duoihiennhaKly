@@ -114,6 +114,30 @@ body.fade-out{
 
 }
 
+.menu-toggle{
+
+display:none;
+
+font-size:34px;
+
+cursor:pointer;
+
+color:#6EA8DD;
+
+user-select:none;
+
+}
+
+.nav-menu{
+
+display:flex;
+
+align-items:center;
+
+gap:60px;
+
+}
+
 .logo{
     text-decoration:none;
     display:inline-block;
@@ -1045,6 +1069,69 @@ transform:translateY(0);
 .home{
 
     padding-top:180px;
+
+}
+
+}
+@media (max-width:768px){
+
+.navbar{
+
+padding:18px 24px;
+
+height:auto;
+
+flex-wrap:wrap;
+
+}
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.nav-menu{
+
+display:none;
+
+width:100%;
+
+flex-direction:column;
+
+gap:22px;
+
+padding:25px 0;
+
+text-align:center;
+
+animation:fadeMenu .3s ease;
+
+}
+
+.nav-menu.show{
+
+display:flex;
+
+}
+
+}
+
+@keyframes fadeMenu{
+
+from{
+
+opacity:0;
+
+transform:translateY(-15px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
 
 }
 

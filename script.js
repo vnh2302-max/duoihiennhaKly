@@ -24,6 +24,21 @@ if (home && frame) {
 
 }
 
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+if(menuToggle && navMenu){
+
+menuToggle.onclick = ()=>{
+
+navMenu.classList.toggle("show");
+
+};
+
+}
+
+
+
 
 /* =====================================================
                 PROFILE SCRIPT V3
