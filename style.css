@@ -542,9 +542,9 @@ to{opacity:1;transform:translateX(0);}
 
     position:fixed;
 
-    left:-95px;      /* đẩy ra ngoài */
+    left:-95px;
 
-    bottom:-95px;    /* đẩy xuống dưới */
+    bottom:-95px;
 
     z-index:9999;
 
