@@ -27,31 +27,38 @@ body.fade-out{
 
 .navbar{
 
-    position:fixed;
+position:fixed;
+top:0;
+left:0;
 
-    top:0;
-    left:0;
+width:100%;
+height:80px;
 
-    width:100%;
-    height:80px;
+display:flex;
+align-items:center;
 
-    display:flex;
+background:rgba(255,255,255,.82);
 
-    justify-content:flex-start;
+backdrop-filter:blur(40px);
 
-    align-items:center;
+box-shadow:0 8px 25px rgba(0,0,0,.05);
 
-    background:rgba(255,255,255,.82);
+padding:0 35px;
 
-    backdrop-filter:blur(40px);
+z-index:999;
 
-    box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
 
-    z-index:999;
+.nav-wrapper{
 
-    padding:0 30px;
+width:100%;
 
-flex-wrap:nowrap;
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+align-items:center;
 
 }
 
@@ -140,10 +147,24 @@ gap:70px;
 
 }
 
+.nav-item{
+
+text-align:center;
+
+}
+
 .logo{
-    text-decoration:none;
-    display:inline-block;
-    margin: 0;
+
+text-decoration:none;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
 }
 
 .logo-small{
@@ -209,7 +230,6 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:100px 11% 60px;
-    margin-top:40px;
 }
 .home-text{width:48%;animation:fadeLeft 1s;}
 .home-text h3{font-size:28px;color:#79A8D8;margin-bottom:18px;}

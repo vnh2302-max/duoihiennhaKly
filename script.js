@@ -27,13 +27,41 @@ if (home && frame) {
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
-if(menuToggle && navMenu){
+if (menuToggle && navMenu) {
 
-menuToggle.onclick = ()=>{
+    // Mở / đóng menu
+    menuToggle.addEventListener("click", (e) => {
 
-navMenu.classList.toggle("show");
+        e.stopPropagation();
 
-};
+        navMenu.classList.toggle("show");
+
+    });
+
+    // Bấm vào menu thì không tự đóng
+    navMenu.addEventListener("click", (e) => {
+
+        e.stopPropagation();
+
+    });
+
+    // Bấm ra ngoài sẽ đóng
+    document.addEventListener("click", () => {
+
+        navMenu.classList.remove("show");
+
+    });
+
+    // Khi đổi sang desktop thì tự đóng menu
+    window.addEventListener("resize", () => {
+
+        if (window.innerWidth > 900) {
+
+            navMenu.classList.remove("show");
+
+        }
+
+    });
 
 }
 
