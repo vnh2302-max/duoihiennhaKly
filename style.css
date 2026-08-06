@@ -123,19 +123,6 @@ align-items:center;
 
 }
 
-.menu-toggle{
-
-display:none;
-
-font-size:34px;
-
-cursor:pointer;
-
-color:#6EA8DD;
-
-user-select:none;
-
-}
 
 .nav-menu{
 
@@ -1089,22 +1076,6 @@ height:80px;
 .logo{
 
 text-align:center;
-
-}
-
-.menu-toggle{
-
-display:block;
-
-position:absolute;
-
-left:20px;
-
-top:50%;
-
-transform:translateY(-50%);
-
-font-size:34px;
 
 }
 
