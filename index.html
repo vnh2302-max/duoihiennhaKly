@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Góc nhỏ của Kly</title>
+
+    <link rel="stylesheet" href="profile.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="favicon.png">
+
+</head>
+
+<body>
+<div id="loader">
+    <div class="loader-content">
+
+        <h1>Kly</h1>
+
+        <div class="loader-line"></div>
+
+        <p>Loading...</p>
+
+    </div>
+</div>
+
+<!-- ======= NAVBAR ======= -->
+
+<header>
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <p class="logo-small">about me.</p>
+
+        <h2>Kly</h2>
+
+    </a>
+
+    <a href="profile.html" class="nav-link">Profile</a>
+
+    <a href="products.html" class="nav-link">Products</a>
+
+    <a href="contact.html" class="nav-link">Contact</a>
+
+</nav>
+
+</header>
+<!-- ======= HOME ======= -->
+
+<section class="home" id="profile">
+
+    <div class="home-text">
+
+        <h3>Xin chào 👋</h3>
+
+        <h1>Mình là Kly.</h1>
+
+        <p>
+
+            Chào mừng đến với góc nhỏ của mình.
+
+            <br>
+
+            Nơi lưu giữ những điều mình yêu thích.
+
+        </p>
+
+        <button class="explore-btn">
+
+            💌 Gửi bạn nè
+
+        </button>
+
+    </div>
+
+<div class="home-image">
+
+  <div class="photo-frame">
+
+      <div class="shine"></div>
+
+      <div class="chat-bubble">
+          I love you
+      </div>
+
+      <img src="avatar.jpg" alt="Avatar">
+
+      <p class="photo-name">— Kly —</p>
+
+   </div>
+
+</div>
+
+
+</section>
+
+<div class="music-player">
+
+    <img
+        src="đĩa nhạc.png"
+        id="music-disc"
+        alt="Vinyl">
+
+    <audio id="bgm"></audio>
+
+</div>
+
+<div id="playlist">
+
+    <h3>🎵 Playlist</h3>
+
+<button data-src="Music/Asleep Among Endives (アンディーヴと眠って).mp3">
+🎵 Asleep Among Endives (アンディーヴと眠って)
+</button>
+
+<button data-src="Music/Có Hay Từ Bao Giờ.mp3">
+🎵 Có Hay Từ Bao Giờ
+</button>
+
+<button data-src="Music/Để Dành Khi Thức Giấc.mp3">
+🎵 Để Dành Khi Thức Giấc
+</button>
+
+<button data-src="Music/From The Start.mp3">
+🎵 From The Start
+</button>
+
+<button data-src="Music/Fukashigi no Carte.mp3">
+🎵 Fukashigi no Carte
+</button>
+
+<button data-src="Music/Propose - なとり.mp3">
+🎵 Propose - なとり
+</button>
+
+<button data-src="Music/Thanh Ngọc Án · Lan Giới.mp3">
+🎵 Thanh Ngọc Án · Lan Giới
+</button>
+
+<div class="player-controls">
+
+    <button id="pause-btn">
+        <span class="material-symbols-rounded">
+            play_arrow
+        </span>
+    </button>
+
+</div>
+
+</div>
+
+<!-- ===== Quote Popup ===== -->
+
+<div class="quote-popup" id="quotePopup">
+
+    <div class="quote-box">
+
+        <button class="close-popup" id="closePopup">
+            ×
+        </button>
+
+<div class="quote-icon">☁</div>
+
+<p id="quoteText"></p>
+
+<p id="quoteVi"></p>
+
+<p id="quoteAuthor"></p>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    Made with <span>☁</span> by Kly
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

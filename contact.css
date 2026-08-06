@@ -1,0 +1,867 @@
+﻿/* =====================================================
+                    CONTACT PAGE
+===================================================== */
+
+.contact-page{
+    width:100%;
+    min-height:100vh;
+    padding:140px 8% 80px;
+    background:
+    radial-gradient(circle at top left,#F7FBFF 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#EDF6FF 0%,transparent 40%),
+    #FCFCFC;
+}
+
+/* =====================================================
+                    HEADER
+===================================================== */
+
+.contact-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.contact-header h1{
+
+    font-size:68px;
+    font-weight:800;
+    color:#6EA8DD;
+    letter-spacing:2px;
+    margin-bottom:18px;
+
+}
+
+.contact-header p{
+
+    max-width:650px;
+    margin:auto;
+
+    font-size:20px;
+    color:#7A8796;
+
+    line-height:34px;
+
+}
+
+/* =====================================================
+                    HERO
+===================================================== */
+
+.contact-hero{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:35px;
+
+}
+
+/* =====================================================
+                    AVATAR
+===================================================== */
+
+.contact-avatar{
+
+    width:185px;
+    height:185px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:#fff;
+
+    border:8px solid rgba(255,255,255,.75);
+
+    box-shadow:
+    0 18px 40px rgba(110,168,221,.18),
+    0 8px 20px rgba(0,0,0,.05);
+
+    transition:.45s;
+
+    cursor:pointer;
+
+}
+
+.contact-avatar img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:.55s;
+
+}
+
+.contact-avatar:hover{
+
+    transform:
+    translateY(-8px)
+    scale(1.03);
+
+    box-shadow:
+    0 30px 60px rgba(110,168,221,.28);
+
+}
+
+.contact-avatar:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* =====================================================
+                    NAME
+===================================================== */
+
+.contact-hero h2{
+
+    margin:0;
+
+    font-size:42px;
+
+    color:#374151;
+
+    font-weight:700;
+
+    line-height:1.1;
+
+}
+
+/* =====================================================
+                    SUBTITLE
+===================================================== */
+
+.contact-sub{
+
+    margin:0;
+
+    color:#7B8794;
+
+    font-size:18px;
+
+    line-height:32px;
+
+}
+
+/* =====================================================
+                SOCIAL GRID
+===================================================== */
+
+.social-grid{
+
+    position:relative;
+
+    isolation:isolate;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin:35px 0 55px;
+
+}
+
+/* =====================================================
+                SOCIAL CARD
+===================================================== */
+
+.social-card{
+
+    cursor:pointer;
+
+    isolation:isolate;
+
+    position:relative;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    padding:14px 16px;
+
+    border-radius:18px;
+
+
+
+    min-height:88px;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    border:1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+
+        0 15px 30px rgba(0,0,0,.05);
+
+    transition:
+
+transform .35s ease,
+
+box-shadow .35s ease,
+
+background .35s ease,
+
+border-color .35s ease;
+
+    width:220px;
+
+    overflow:hidden;
+
+    z-index:1;
+
+}
+
+/* hover */
+
+.social-card:hover{
+
+    transform:
+        translateY(-6px)
+        scale(1.02);
+
+    background:
+        rgba(255,255,255,.92);
+
+    border-color:#BFD9F6;
+
+    box-shadow:
+        0 18px 36px rgba(110,168,221,.15);
+
+}
+
+.social-top{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:2;
+
+}
+
+/* =====================================================
+                    ICON
+===================================================== */
+
+.social-title .material-symbols-rounded{
+
+    font-size:20px;
+
+    margin:0;
+
+    color:#6EA8DD;
+
+    transition:.3s;
+
+}
+
+.social-card:hover .social-title .material-symbols-rounded{
+
+    transform:
+        rotate(-8deg)
+        scale(1.1);
+
+}
+
+/* =====================================================
+                    TITLE
+===================================================== */
+
+.social-title h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#4B5D73;
+
+}
+
+.social-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+/* =====================================================
+                    TEXT
+===================================================== */
+
+.social-card p{
+
+    margin:0;
+
+    color:#8B97A5;
+
+    font-size:13px;
+
+    line-height:20px;
+
+    position:relative;
+
+
+
+    z-index:2;
+
+}
+
+.social-card:hover h3{
+
+    color:#6EA8DD;
+
+}
+/* =====================================================
+                CARD COLOR
+===================================================== */
+
+.facebook{
+    border-top:3px solid #6EA8DD;
+}
+
+.instagram{
+    border-top:3px solid #7FB7EC;
+}
+
+.messenger{
+    border-top:3px solid #93C5F2;
+}
+
+/* =====================================================
+                    RULES GRID
+===================================================== */
+
+.rules-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-bottom:70px;
+
+}
+
+/* =====================================================
+                    RULE CARD
+===================================================== */
+
+.rule-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.06);
+
+    transition:.4s;
+
+}
+
+.rule-card:hover{
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 25px 50px rgba(110,168,221,.18);
+
+}
+
+.rule-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(110,168,221,.05),
+        transparent 50%
+    );
+
+    pointer-events:none;
+
+}
+
+.rule-card h2{
+
+    color:#5D8EC7;
+
+    font-size:30px;
+
+    margin-bottom:22px;
+
+}
+
+.rule-card ul{
+
+    list-style:none;
+
+}
+
+.rule-card li{
+
+    position:relative;
+
+    padding-left:28px;
+
+    margin-bottom:18px;
+
+    color:#667382;
+
+    line-height:30px;
+
+}
+
+.rule-card li::before{
+
+    content:"✔";
+
+    position:absolute;
+
+    left:0;
+
+    color:#84B8E8;
+
+    font-weight:bold;
+
+}
+
+/* =====================================================
+                    MESSAGE
+===================================================== */
+
+.contact-message{
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:35px;
+
+    padding:55px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,.06);
+
+    margin-bottom:70px;
+
+}
+
+.contact-message h2{
+
+    font-size:36px;
+
+    color:#6EA8DD;
+
+    margin-bottom:20px;
+
+}
+
+.contact-message p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:36px;
+
+    color:#6F7D8A;
+
+}
+
+/* =====================================================
+                    FADE
+===================================================== */
+
+.contact-header,
+.contact-hero,
+.social-card,
+.rule-card,
+.contact-message{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:fadeUp .8s forwards;
+
+}
+
+.contact-hero{
+
+    animation-delay:.15s;
+
+}
+
+.social-card:nth-child(1){
+
+    animation-delay:.3s;
+
+}
+
+.social-card:nth-child(2){
+
+    animation-delay:.45s;
+
+}
+
+.social-card:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+.rule-card:nth-child(1){
+
+    animation-delay:.75s;
+
+}
+
+.rule-card:nth-child(2){
+
+    animation-delay:.9s;
+
+}
+
+.contact-message{
+
+    animation-delay:1.05s;
+
+}
+
+/* =====================================================
+                    KEYFRAME
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(45px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================================
+                RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .contact-header h1{
+
+        font-size:52px;
+
+    }
+
+    .social-grid{
+
+        flex-direction:column;
+
+
+        align-items:center;
+
+    }
+
+    .rules-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contact-page{
+
+        padding:120px 25px 60px;
+
+    }
+
+    .contact-avatar{
+
+        width:150px;
+
+        height:150px;
+
+    }
+
+    .contact-hero h2{
+
+        font-size:34px;
+
+    }
+
+    .contact-header h1{
+
+        font-size:42px;
+
+    }
+
+    .contact-header p{
+
+        font-size:17px;
+
+        line-height:30px;
+
+    }
+
+    .social-card{
+
+        padding:32px 24px;
+
+        width:100%;
+
+
+
+        max-width:320px;
+
+    }
+
+    .rule-card{
+
+        padding:32px;
+
+    }
+
+    .contact-message{
+
+        padding:35px;
+
+    }
+
+    .contact-message h2{
+
+        font-size:30px;
+
+    }
+
+    .contact-message p{
+
+        font-size:16px;
+
+        line-height:30px;
+
+    }
+
+}
+
+.online-status{
+
+    margin-top:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 22px;
+
+    background:rgba(255,255,255,.75);
+
+    border-radius:999px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+.online-status .dot{
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#63D471;
+
+    box-shadow:0 0 12px #63D471;
+
+}
+
+.social-arrow{
+
+    font-size:20px;
+
+    color:#9BBEE5;
+
+    transition:.3s;
+
+}
+
+.social-card:hover .social-arrow{
+
+    transform:
+        translate(3px,-3px)
+        scale(1.1);
+
+}
+
+.social-card:hover .arrow{
+
+    transform:
+
+        translate(4px,-4px);
+
+}
+
+.social-line{
+
+    width:100%;
+
+    height:1px;
+
+    background:#E7EEF7;
+
+    margin:10px 0;
+
+}
+
+.social-card:hover .social-line{
+
+    background:#C8DCF5;
+
+}
+
+.facebook:hover .material-symbols-rounded{
+
+    color:#4D94DA;
+
+}
+
+.instagram:hover .material-symbols-rounded{
+
+    color:#6EA8DD;
+}
+
+.messenger:hover .material-symbols-rounded{
+
+    color:#7CB6E9;
+
+}
+
+/* ==========================================
+                RULES INTRO
+========================================== */
+
+.rules-intro{
+
+    max-width:700px;
+
+    margin:15px auto 40px;
+
+    text-align:center;
+
+}
+
+.rules-divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:16px;
+
+    margin-bottom:22px;
+
+}
+
+.rules-divider::before,
+.rules-divider::after{
+
+    content:"";
+
+    width:140px;
+
+    height:1px;
+
+    background:#D7E6F6;
+
+}
+
+.rules-divider span{
+
+    font-size:22px;
+
+}
+
+.rules-intro h2{
+
+    margin:0 0 14px;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#6EA8DD;
+
+}
+
+.rules-intro p{
+
+    margin:0;
+
+    font-size:17px;
+
+    line-height:30px;
+
+    color:#7B8794;
+
+}
