@@ -37,7 +37,7 @@ body.fade-out{
 
     display:flex;
 
-    justify-content:space-evenly;
+    justify-content:space-between;
 
     align-items:center;
 
@@ -48,6 +48,8 @@ body.fade-out{
     box-shadow:0 8px 25px rgba(0,0,0,.05);
 
     z-index:999;
+
+    padding:0 30px;
 
 }
 
@@ -169,6 +171,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:120px 11% 80px;
+    margin-top:120px;
 }
 .home-text{width:48%;animation:fadeLeft 1s;}
 .home-text h3{font-size:28px;color:#79A8D8;margin-bottom:18px;}
@@ -1003,5 +1006,46 @@ transform:translateY(0);
     cursor:pointer;
 
     color:#9AA8B7;
+
+}
+/* ================= MOBILE NAVBAR ================= */
+
+@media (max-width:768px){
+
+.navbar{
+
+    height:auto;
+
+    flex-direction:column;
+
+    padding:16px 0;
+
+    gap:16px;
+
+}
+
+.logo{
+
+    margin-bottom:8px;
+
+}
+
+.menu{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.home{
+
+    padding-top:180px;
+
+}
 
 }
