@@ -4,34 +4,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@400;500;600;700&display=swap');
 
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
 body{
 font-family:'Poppins',sans-serif;
 background:#FCFCFC;
 color:#374151;
 overflow-x:hidden;
     opacity:1;
-
-
-    transition:opacity .35s ease;
+transition:opacity .35s ease;
 }
-
 body.fade-out{
-
-
     opacity:0;
-
-
-
 }
-
 .navbar{
-
-position:fixed;
-top:0;
-left:0;
-
-width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
 height:80px;
 
 display:flex;
