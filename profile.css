@@ -1367,6 +1367,14 @@ body{
 
 @media(max-width:900px){
 
+.profile-page{
+
+    width:94%;
+
+    margin:95px auto 60px;
+
+}
+
 .quote-card{
 
     padding:30px 24px;
@@ -1397,5 +1405,96 @@ body{
 
 }
 
+.profile-header{
+
+    margin-bottom:28px;
+
 }
 
+.profile-header h1{
+
+    font-size:clamp(32px,8vw,42px);
+
+    letter-spacing:1px;
+
+}
+
+.profile-header p{
+
+    font-size:14px;
+
+}
+
+.hero-card{
+
+    border-radius:22px;
+
+}
+
+.hero-banner{
+
+    height:120px;
+
+}
+
+.avatar{
+
+    width:120px;
+
+    height:120px;
+
+    border-width:5px;
+
+}
+
+.hero-content{
+
+    margin-top:-40px;
+
+    padding:0 22px 28px;
+
+}
+
+.hero-name{
+
+    font-size:34px;
+
+}
+
+.hero-sub{
+
+    font-size:15px;
+
+}
+
+.online-status{
+
+    padding:7px 16px;
+
+    font-size:13px;
+
+}
+
+.badges{
+
+    gap:8px;
+
+}
+
+.badges span{
+
+    font-size:13px;
+
+    padding:7px 14px;
+
+}
+
+.signature{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+}
