@@ -116,11 +116,13 @@ width:100%;
 }
 
 .nav-link:hover::after,
-
 .nav-link.active::after{
 
+    width:32px;
 
-    width: 100%;
+    left:50%;
+
+    transform:translateX(-50%);
 
 }
 
@@ -159,6 +161,29 @@ font-weight:700;
 transition:.35s;
 }
 .logo:hover h2{letter-spacing:2px;}
+.active-logo h2{
+
+    color:#6EA8DD;
+
+}
+
+.active-logo::after{
+
+    content:"";
+
+    display:block;
+
+    width:32px;
+
+    height:3px;
+
+    margin:5px auto 0;
+
+    border-radius:999px;
+
+    background:#6EA8DD;
+
+}
 /* ========= NAV MENU ========= */
 
 .nav-menu{
