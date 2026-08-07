@@ -404,31 +404,229 @@
 
 }
 
-@media(max-width:900px){
+@media (max-width:900px){
 
-.products-page{
+#no-result{
 
-    width:94%;
+    min-height:260px;
 
-}
-
-.products-header h1{
-
-    font-size:35px;
+    padding:60px 15px;
 
 }
 
-.product-grid{
+#no-result h2{
 
-    grid-template-columns:1fr;
+    font-size:24px;
+
+}
+
+#no-result p{
+
+    font-size:14px;
+
+    line-height:1.8;
 
 }
 
-.search-box{
+.no-result-img{
 
-    padding:16px 22px;
+    width:130px;
 
 }
+
+    .products-page{
+
+        width:94%;
+
+        margin:95px auto 70px;
+
+        padding-bottom:170px;
+
+    }
+
+    .products-header{
+
+        margin-bottom:30px;
+
+    }
+
+    .products-header h1{
+
+        font-size:clamp(32px,8vw,40px);
+
+        letter-spacing:1px;
+
+    }
+
+    .products-header p{
+
+        max-width:330px;
+
+        margin:auto;
+
+        font-size:15px;
+
+        line-height:28px;
+
+    }
+
+    .search-box{
+
+        padding:15px 18px;
+
+        gap:12px;
+
+        border-radius:20px;
+
+    }
+
+    .search-box span{
+
+        font-size:22px;
+
+    }
+
+    .search-box input{
+
+        font-size:15px;
+
+    }
+
+    .tag-filter{
+
+        gap:10px;
+
+        justify-content:center;
+
+        margin-bottom:30px;
+
+    }
+
+    .tag{
+
+        padding:10px 16px;
+
+        font-size:13px;
+
+    }
+
+    .product-grid{
+
+        grid-template-columns:1fr;
+
+        gap:22px;
+
+    }
+
+.product-card{
+
+    border-radius:22px;
+
+}
+
+.product-image{
+
+    height:240px;
+
+}
+
+.status{
+
+    top:14px;
+
+    right:14px;
+
+    padding:7px 14px;
+
+    font-size:12px;
+
+}
+
+.product-content{
+
+    padding:18px;
+
+}
+
+.product-content h3{
+
+    font-size:20px;
+
+    margin-bottom:14px;
+
+    line-height:1.45;
+
+}
+
+.product-info{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-bottom:16px;
+
+}
+
+.product-info p{
+
+    font-size:13px;
+
+    padding:8px 13px;
+
+}
+
+.product-tags span{
+
+    font-size:12px;
+
+    padding:7px 12px;
+
+}
+
+.product-tags{
+
+    gap:8px;
+
+}
+
+.product-card:hover{
+
+    transform:none;
+
+}
+
+}
+
+@media (max-width:480px){
+
+    .products-header h1{
+
+        font-size:30px;
+
+    }
+
+    .product-image{
+
+        height:210px;
+
+    }
+
+    .product-content h3{
+
+        font-size:18px;
+
+    }
+
+    .tag{
+
+        padding:8px 13px;
+
+        font-size:12px;
+
+    }
 
 }
 

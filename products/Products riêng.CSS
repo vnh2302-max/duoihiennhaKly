@@ -365,47 +365,146 @@ margin-bottom:15px;
                     RESPONSIVE
 ================================================== */
 
-@media(max-width:1000px){
+@media (max-width:900px){
 
-.gallery{
+    header{
 
-    column-count:2;
+        padding:22px 5% 8px;
+
+    }
+
+    .back-button{
+
+        padding:10px 18px;
+
+        font-size:14px;
+
+    }
+
+    .product-page{
+
+        width:94%;
+
+        padding-bottom:70px;
+
+    }
+
+    .product-box,
+    .feedback-box{
+
+        padding:32px;
+
+    }
+
+    .product-box h1{
+
+        font-size:34px;
+
+        margin-bottom:28px;
+
+    }
+
+    .gallery{
+
+        column-count:2;
+
+        column-gap:12px;
+
+        margin-bottom:28px;
+
+    }
+
+    .gallery-item{
+
+        margin-bottom:12px;
+
+    }
+
+    .gallery img{
+
+        border:8px solid #fff;
+
+        border-radius:14px;
+
+    }
 
 }
 
+@media (max-width:480px){
+
+    header{
+
+        padding:18px 20px 5px;
+
+    }
+
+    .back-button{
+
+        width:100%;
+
+    }
+
+    .product-page{
+
+        width:92%;
+
+    }
+
+    .product-box,
+    .feedback-box{
+
+        padding:28px;
+
+    }
+
+    .product-box h1{
+
+        font-size:28px;
+
+        line-height:1.35;
+
+    }
+
+    .gallery{
+
+        column-count:1;
+
+    }
+
+    .gallery img{
+
+        border:6px solid #fff;
+
+    }
+
+.empty-feedback{
+
+    padding:25px 20px;
+
 }
 
+.empty-icon{
 
+    width:72px;
+    height:72px;
 
-@media(max-width:650px){
-
-.product-box,
-
-.feedback-box{
-
-    padding:26px;
+    font-size:34px;
 
 }
 
-.product-box h1{
+.feedback-popup-content{
 
-    font-size:28px;
-
-}
-
-.gallery{
-
-    column-count:1;
+    padding:30px 24px;
 
 }
 
-.product-info{
+.popup-buttons{
 
-    grid-template-columns:1fr;
+    flex-direction:column;
 
 }
 
-.gom-button{
+.popup-buttons a{
 
     width:100%;
 
